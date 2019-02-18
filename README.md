@@ -29,8 +29,9 @@ twitter handle.
 
 This code was written to test a broadband cable internet connection. If you have DSL or fiber
 the thresholds in the code will not apply to you. As written, downspeeds less than 30 Mbits/s will trigger
-a tweet.  If you search for "30" you will find the sections that define the speed thresholds. Edit these as needed.
-You will also find a section where you can edit the contents of your twitter status updates.
+a tweet.  If you search speedtest_twitter_bot.py for "30" you will find the sections that define the speed
+thresholds. Edit these as needed. You will also find a section where you can edit the contents of your
+twitter status updates.
 
 In order to make these speedtests fair, do not run this over wifi. You should connect via ethernet to your router.
 If you must use wifi, edit the speed thresholds appropriately.
