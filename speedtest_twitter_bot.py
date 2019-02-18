@@ -56,9 +56,9 @@ def graph_speed():
 	plt.title("Charter Spectrum Consumer Internet Down/Up Speeds",fontsize=20)
 	plt.ylabel("Connection Speed (Mbits/s)",fontsize=18)
 	#set ylim based on your connection speed.
-	#for example, I nominally get ~70Mbits/s,
-	#so 90 is a good y-axis limit for me.
-	plt.ylim(0,90)
+	#for example, I nominally get ~80Mbits/s,
+	#so 100 is a good y-axis limit for me.
+	plt.ylim(0,100)
 	
 	#draw plot for up/down speeds
 	ax.plot(np.arange(0,len(df)),df["Down"].values,
