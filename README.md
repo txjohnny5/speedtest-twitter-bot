@@ -4,6 +4,8 @@ Run an internet speed test and send a tweet to your ISP if your speeds are too l
 This script is designed to be run as a cronjob every few minutes on an always-on computer
 such as your home server or a raspberry pi. It will test your internet speed and store the
 data in a .csv file. Speeds below a certain threshold will trigger a tweet @YourISP.
+Consistently slow speeds will trigger the creation of a graph of your speeds over time
+which will be included in a status update.
 
 The speedtest is performed by [speedtest-cli](https://github.com/sivel/speedtest-cli). You will need to have this installed on your machine.
 
