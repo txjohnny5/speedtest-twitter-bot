@@ -38,7 +38,7 @@ def graph_speed():
 	a = ax.get_xticks().tolist()
 	for x in range(0,len(df["Down"])):
 		#display only every nth x-axis tick label
-		if x % 10 == 0:
+		if x % 50 == 0:
 			a[x] = df.iloc[x]["Timestamp"]
 		else:
 			a[x] = " "
