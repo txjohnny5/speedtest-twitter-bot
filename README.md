@@ -21,7 +21,7 @@ twitter keys and tokens.
 
 To use this software, place the files in this repository into a common directory and run speedtest_twitter_bot.py.
 As stated above, speedtest_twitter_bot.py should be run as cronjob. As written, it is assumed the code will be run
-every 5 minutes.
+every 5 minutes.  If you're not root, make sure your account is authorized to run cronjobs.  You may want to structure your cronjob with a leading change directory command to make sure files are created where you intend them (though things will still work if you don't).  The crontab line should look something like "*/5 * * * * cd /directory/containing/python/files ; /directory/containing/python/files/speedtest_twitter_bot.py"
 
 You may need to edit the code based on your ISP and the speeds stipulated in your internet service contract.
 In speedtest_twitter_bot.py, do a search for "@Ask_Spectrum" and replace all instances with your ISP's
